@@ -1,0 +1,13 @@
+root,name,exchange,group,multiplier,tick_size,currency,months,fee_per_side_usd,rate_tenor
+ES,E-mini S&P 500,CME,equity_index,50,0.25,USD,quarterly,1.50,
+NQ,E-mini Nasdaq-100,CME,equity_index,20,0.25,USD,quarterly,1.50,
+RTY,E-mini Russell 2000,CME,equity_index,50,0.10,USD,quarterly,1.50,
+ZT,2-Year T-Note,CBOT,treasury,2000,0.00390625,USD,quarterly,1.00,UST2Y
+ZF,5-Year T-Note,CBOT,treasury,1000,0.0078125,USD,quarterly,1.00,UST5Y
+ZN,10-Year T-Note,CBOT,treasury,1000,0.015625,USD,quarterly,1.00,UST7Y
+ZB,T-Bond,CBOT,treasury,1000,0.03125,USD,quarterly,1.00,UST20Y
+6E,Euro FX,CME,fx,125000,0.00005,USD,quarterly,1.60,
+6B,British Pound,CME,fx,62500,0.0001,USD,quarterly,1.60,
+6J,Japanese Yen,CME,fx,12500000,0.0000005,USD,quarterly,1.60,
+CL,WTI Crude Oil,NYMEX,energy,1000,0.01,USD,monthly,1.50,
+GC,Gold,COMEX,metals,100,0.10,USD,gold,1.60,

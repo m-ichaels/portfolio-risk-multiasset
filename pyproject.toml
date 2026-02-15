@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xrisk"
+version = "0.1.0"
+description = "Portfolio risk monitor and multi-asset operations layer: exposures, limits, intraday P&L attribution, margin, futures rolls, FX forwards and settlement netting, credit RFQ post-trade; fault-injected and scored"
+requires-python = ">=3.10"
+dependencies = ["numpy", "pandas", "pyarrow", "duckdb", "matplotlib", "fpdf2"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools]
+packages = ["xrisk", "xrisk._xops"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
