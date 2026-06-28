@@ -1,0 +1,28 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install numpy pandas pyarrow duckdb matplotlib fpdf2 pytest
+      - name: unit tests (marks, limits, SPAN, attribution identity, exposures and VaR, rolls, value dates, netting, RFQ post-trade, scoring) and one fault day on the committed data
+        run: python -m pytest -q
+      - name: the futures continuity and roll-calendar check and the FX value-date check on the committed data
+        run: |
+          python -m xrisk futures-check --from 2026-06-01
+          python -m xrisk fx-check
+      - name: a short pipeline (two fault days, two clean days), the figures and the summary
+        run: |
+          python -m xrisk run --from 2026-08-25 --to 2026-08-28 --faults alternate --seed 1
+          python scripts/plots.py
+          python scripts/summarize.py
+      - name: the morning job on one date
+        run: python -m xrisk sod --date 2026-09-01
+      - name: systemd units parse
+        run: |
+          sudo apt-get install -y systemd
+          for u in deploy/*.service deploy/*.timer; do systemd-analyze verify --man=no "$u" || true; done

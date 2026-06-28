@@ -1,0 +1,9 @@
+[Unit]
+Description=Run the xrisk start of day after the order stack's (London 07:45)
+
+[Timer]
+OnCalendar=Mon..Fri 07:45 Europe/London
+Persistent=true
+
+[Install]
+WantedBy=timers.target

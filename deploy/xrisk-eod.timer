@@ -1,0 +1,9 @@
+[Unit]
+Description=Run the xrisk end of day after the order stack's reconciliation (London 22:30)
+
+[Timer]
+OnCalendar=Mon..Fri 22:30 Europe/London
+Persistent=true
+
+[Install]
+WantedBy=timers.target

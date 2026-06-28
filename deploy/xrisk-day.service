@@ -1,0 +1,14 @@
+[Unit]
+Description=xrisk trading day: the intraday risk monitor from the London open to after the US close, then the close, the P&L attribution, margin and the end-of-day checks
+After=network-online.target xrisk-sod.service
+
+[Service]
+Type=simple
+User=xops
+WorkingDirectory=/opt/xrisk
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/opt/xrisk/.venv/bin/python -m xrisk day --date today
+Restart=on-failure
+RestartSec=30
+StandardOutput=append:/var/log/xrisk/day.log
+StandardError=append:/var/log/xrisk/day.log

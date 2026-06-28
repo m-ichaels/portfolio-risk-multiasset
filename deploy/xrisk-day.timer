@@ -1,0 +1,9 @@
+[Unit]
+Description=Start the xrisk monitor at the London open
+
+[Timer]
+OnCalendar=Mon..Fri 08:00 Europe/London
+Persistent=true
+
+[Install]
+WantedBy=timers.target

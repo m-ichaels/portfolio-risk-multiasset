@@ -1,0 +1,12 @@
+[Unit]
+Description=xrisk end of day: the day's checks and open high or critical alerts into the log, after the reconciliation
+After=network-online.target xops-eod.service
+
+[Service]
+Type=oneshot
+User=xops
+WorkingDirectory=/opt/xrisk
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/opt/xrisk/.venv/bin/python -m xrisk eod --date today
+StandardOutput=append:/var/log/xrisk/eod.log
+StandardError=append:/var/log/xrisk/eod.log
