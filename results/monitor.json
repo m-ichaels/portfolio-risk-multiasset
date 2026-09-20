@@ -1,0 +1,120 @@
+{
+ "by_type": {
+  "stale_price": {
+   "injected": 54,
+   "detected": 54,
+   "median_ttd_s": 600.0,
+   "p90_ttd_s": 600.0
+  },
+  "spiked_mark": {
+   "injected": 54,
+   "detected": 54,
+   "median_ttd_s": 0.0,
+   "p90_ttd_s": 0.0
+  },
+  "fx_stale": {
+   "injected": 27,
+   "detected": 27,
+   "median_ttd_s": 1500.0,
+   "p90_ttd_s": 1500.0
+  },
+  "fx_inverted": {
+   "injected": 27,
+   "detected": 27,
+   "median_ttd_s": 0.0,
+   "p90_ttd_s": 0.0
+  },
+  "phantom_position": {
+   "injected": 54,
+   "detected": 54,
+   "median_ttd_s": 900.0,
+   "p90_ttd_s": 1500.0
+  },
+  "missing_fill": {
+   "injected": 54,
+   "detected": 54,
+   "median_ttd_s": 1200.0,
+   "p90_ttd_s": 1500.0
+  },
+  "doubled_load": {
+   "injected": 27,
+   "detected": 27,
+   "median_ttd_s": 900.0,
+   "p90_ttd_s": 1320.0000000000007
+  },
+  "sign_flip": {
+   "injected": 24,
+   "detected": 24,
+   "median_ttd_s": 1500.0,
+   "p90_ttd_s": 1500.0
+  },
+  "wrong_multiplier": {
+   "injected": 27,
+   "detected": 27,
+   "median_ttd_s": 0.0,
+   "p90_ttd_s": 0.0
+  },
+  "sector_mislabel": {
+   "injected": 27,
+   "detected": 27,
+   "median_ttd_s": 0.0,
+   "p90_ttd_s": 0.0
+  },
+  "rogue_fill": {
+   "injected": 27,
+   "detected": 27,
+   "median_ttd_s": 0.0,
+   "p90_ttd_s": 0.0
+  },
+  "margin_shortfall": {
+   "injected": 27,
+   "detected": 27,
+   "median_ttd_s": 0.0,
+   "p90_ttd_s": 0.0
+  },
+  "bond_mark_stale": {
+   "injected": 27,
+   "detected": 27,
+   "median_ttd_s": 0.0,
+   "p90_ttd_s": 0.0
+  },
+  "late_trace_report": {
+   "injected": 27,
+   "detected": 27,
+   "median_ttd_s": 1200.0,
+   "p90_ttd_s": 1200.0
+  },
+  "off_market_rfq": {
+   "injected": 27,
+   "detected": 27,
+   "median_ttd_s": 0.0,
+   "p90_ttd_s": 0.0
+  },
+  "contract_not_rolled": {
+   "injected": 1,
+   "detected": 1,
+   "median_ttd_s": 1800.0,
+   "p90_ttd_s": 1800.0
+  },
+  "settlement_missing": {
+   "injected": 8,
+   "detected": 8,
+   "median_ttd_s": 0.0,
+   "p90_ttd_s": 0.0
+  }
+ },
+ "injected": 519,
+ "detected": 519,
+ "detection_rate": 1.0,
+ "median_ttd_s": 0.0,
+ "p90_ttd_s": 1500.0,
+ "false_alerts_per_clean_day": 4.035714285714286,
+ "false_alerts_by_rule": {
+  "LIMIT_WARN": 65,
+  "LIMIT_BREACH": 47,
+  "LATE_TRACE_REPORT": 1
+ },
+ "clean_incidents_per_day": 3.357142857142857,
+ "fault_days": 27,
+ "clean_days": 28
+}

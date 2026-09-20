@@ -1,0 +1,326 @@
+{
+ "continuous_vs_front": {
+  "ES": {
+   "days_both": 63,
+   "equal": 63,
+   "max_abs_diff": 0.0
+  },
+  "NQ": {
+   "days_both": 63,
+   "equal": 63,
+   "max_abs_diff": 0.0
+  },
+  "RTY": {
+   "days_both": 63,
+   "equal": 63,
+   "max_abs_diff": 0.0
+  },
+  "ZT": {
+   "days_both": 77,
+   "equal": 42,
+   "max_abs_diff": 0.21484375
+  },
+  "ZF": {
+   "days_both": 77,
+   "equal": 42,
+   "max_abs_diff": 0.1953125
+  },
+  "ZN": {
+   "days_both": 77,
+   "equal": 49,
+   "max_abs_diff": 0.296875
+  },
+  "ZB": {
+   "days_both": 77,
+   "equal": 49,
+   "max_abs_diff": 0.59375
+  },
+  "6E": {
+   "days_both": 4,
+   "equal": 0,
+   "max_abs_diff": 0.002650022506713867
+  },
+  "6B": {
+   "days_both": 4,
+   "equal": 0,
+   "max_abs_diff": 0.0003999471664428711
+  },
+  "6J": {
+   "days_both": 4,
+   "equal": 0,
+   "max_abs_diff": 2.9999762773513794e-05
+  },
+  "CL": {
+   "days_both": 20,
+   "equal": 20,
+   "max_abs_diff": 0.0
+  },
+  "GC": {
+   "days_both": 35,
+   "equal": 35,
+   "max_abs_diff": 0.0
+  }
+ },
+ "roll_calendar": [
+  {
+   "root": "ES",
+   "date": "2026-06-17",
+   "from_contract": "ESM26",
+   "to_contract": "ESU26",
+   "first_notice": null,
+   "last_trade": "2026-06-18",
+   "front_px": 7424.5,
+   "src_from": "continuous",
+   "next_px": 7492.75,
+   "src_to": "listed",
+   "spread_ticks": 273.0
+  },
+  {
+   "root": "ES",
+   "date": "2026-09-17",
+   "from_contract": "ESU26",
+   "to_contract": "ESZ26",
+   "first_notice": null,
+   "last_trade": "2026-09-18",
+   "front_px": 7640.0,
+   "src_from": "listed",
+   "next_px": 7707.25,
+   "src_to": "listed",
+   "spread_ticks": 269.0
+  },
+  {
+   "root": "NQ",
+   "date": "2026-06-17",
+   "from_contract": "NQM26",
+   "to_contract": "NQU26",
+   "first_notice": null,
+   "last_trade": "2026-06-18",
+   "front_px": 29687.5,
+   "src_from": "continuous",
+   "next_px": 29998.75,
+   "src_to": "listed",
+   "spread_ticks": 1245.0
+  },
+  {
+   "root": "NQ",
+   "date": "2026-09-17",
+   "from_contract": "NQU26",
+   "to_contract": "NQZ26",
+   "first_notice": null,
+   "last_trade": "2026-09-18",
+   "front_px": 29446.75,
+   "src_from": "listed",
+   "next_px": 29743.0,
+   "src_to": "listed",
+   "spread_ticks": 1185.0
+  },
+  {
+   "root": "RTY",
+   "date": "2026-06-17",
+   "from_contract": "RTYM26",
+   "to_contract": "RTYU26",
+   "first_notice": null,
+   "last_trade": "2026-06-18",
+   "front_px": 2919.60009765625,
+   "src_from": "continuous",
+   "next_px": 2942.800048828125,
+   "src_to": "listed",
+   "spread_ticks": 231.99951171875
+  },
+  {
+   "root": "RTY",
+   "date": "2026-09-17",
+   "from_contract": "RTYU26",
+   "to_contract": "RTYZ26",
+   "first_notice": null,
+   "last_trade": "2026-09-18",
+   "front_px": 2875.89990234375,
+   "src_from": "listed",
+   "next_px": 2896.89990234375,
+   "src_to": "listed",
+   "spread_ticks": 210.0
+  },
+  {
+   "root": "ZT",
+   "date": "2026-08-27",
+   "from_contract": "ZTU26",
+   "to_contract": "ZTZ26",
+   "first_notice": "2026-08-31",
+   "last_trade": "2026-09-30",
+   "front_px": 102.9765625,
+   "src_from": "listed",
+   "next_px": 102.83984375,
+   "src_to": "listed",
+   "spread_ticks": -35.0
+  },
+  {
+   "root": "ZF",
+   "date": "2026-08-27",
+   "from_contract": "ZFU26",
+   "to_contract": "ZFZ26",
+   "first_notice": "2026-08-31",
+   "last_trade": "2026-09-30",
+   "front_px": 106.3203125,
+   "src_from": "listed",
+   "next_px": 106.1953125,
+   "src_to": "listed",
+   "spread_ticks": -16.0
+  },
+  {
+   "root": "ZN",
+   "date": "2026-08-27",
+   "from_contract": "ZNU26",
+   "to_contract": "ZNZ26",
+   "first_notice": "2026-08-31",
+   "last_trade": "2026-09-21",
+   "front_px": 108.578125,
+   "src_from": "listed",
+   "next_px": 108.328125,
+   "src_to": "listed",
+   "spread_ticks": -16.0
+  },
+  {
+   "root": "ZB",
+   "date": "2026-08-27",
+   "from_contract": "ZBU26",
+   "to_contract": "ZBZ26",
+   "first_notice": "2026-08-31",
+   "last_trade": "2026-09-21",
+   "front_px": 109.96875,
+   "src_from": "listed",
+   "next_px": 109.46875,
+   "src_to": "listed",
+   "spread_ticks": -16.0
+  },
+  {
+   "root": "6E",
+   "date": "2026-06-12",
+   "from_contract": "6EM26",
+   "to_contract": "6EU26",
+   "first_notice": null,
+   "last_trade": "2026-06-15",
+   "front_px": 1.1575000286102295,
+   "src_from": "continuous",
+   "next_px": NaN,
+   "src_to": "missing",
+   "spread_ticks": null
+  },
+  {
+   "root": "6E",
+   "date": "2026-09-11",
+   "from_contract": "6EU26",
+   "to_contract": "6EZ26",
+   "first_notice": null,
+   "last_trade": "2026-09-14",
+   "front_px": 1.159600019454956,
+   "src_from": "continuous",
+   "next_px": 1.1638000011444092,
+   "src_to": "listed",
+   "spread_ticks": 83.9996337890625
+  },
+  {
+   "root": "6B",
+   "date": "2026-06-12",
+   "from_contract": "6BM26",
+   "to_contract": "6BU26",
+   "first_notice": null,
+   "last_trade": "2026-06-15",
+   "front_px": 1.3415000438690186,
+   "src_from": "continuous",
+   "next_px": NaN,
+   "src_to": "missing",
+   "spread_ticks": null
+  },
+  {
+   "root": "6B",
+   "date": "2026-09-11",
+   "from_contract": "6BU26",
+   "to_contract": "6BZ26",
+   "first_notice": null,
+   "last_trade": "2026-09-14",
+   "front_px": 1.3524999618530273,
+   "src_from": "continuous",
+   "next_px": 1.3528000116348267,
+   "src_to": "listed",
+   "spread_ticks": 3.000497817993164
+  },
+  {
+   "root": "6J",
+   "date": "2026-06-12",
+   "from_contract": "6JM26",
+   "to_contract": "6JU26",
+   "first_notice": null,
+   "last_trade": "2026-06-15",
+   "front_px": 0.0062420000322163105,
+   "src_from": "continuous",
+   "next_px": NaN,
+   "src_to": "missing",
+   "spread_ticks": null
+  },
+  {
+   "root": "6J",
+   "date": "2026-09-11",
+   "from_contract": "6JU26",
+   "to_contract": "6JZ26",
+   "first_notice": null,
+   "last_trade": "2026-09-14",
+   "front_px": 0.006506000179797411,
+   "src_from": "continuous",
+   "next_px": 0.006554000079631805,
+   "src_to": "listed",
+   "spread_ticks": 95.99979966878891
+  },
+  {
+   "root": "CL",
+   "date": "2026-06-18",
+   "from_contract": "CLN26",
+   "to_contract": "CLQ26",
+   "first_notice": "2026-06-23",
+   "last_trade": "2026-06-22",
+   "front_px": 76.5999984741211,
+   "src_from": "continuous",
+   "next_px": NaN,
+   "src_to": "missing",
+   "spread_ticks": null
+  },
+  {
+   "root": "CL",
+   "date": "2026-07-20",
+   "from_contract": "CLQ26",
+   "to_contract": "CLU26",
+   "first_notice": "2026-07-22",
+   "last_trade": "2026-07-21",
+   "front_px": 83.2300033569336,
+   "src_from": "continuous",
+   "next_px": NaN,
+   "src_to": "missing",
+   "spread_ticks": null
+  },
+  {
+   "root": "CL",
+   "date": "2026-08-19",
+   "from_contract": "CLU26",
+   "to_contract": "CLV26",
+   "first_notice": "2026-08-21",
+   "last_trade": "2026-08-20",
+   "front_px": 85.83000183105469,
+   "src_from": "continuous",
+   "next_px": 84.38999938964844,
+   "src_to": "listed",
+   "spread_ticks": -144.000244140625
+  },
+  {
+   "root": "GC",
+   "date": "2026-07-29",
+   "from_contract": "GCQ26",
+   "to_contract": "GCZ26",
+   "first_notice": "2026-07-31",
+   "last_trade": "2026-08-27",
+   "front_px": 4036.300048828125,
+   "src_from": "continuous",
+   "next_px": 4097.0,
+   "src_to": "listed",
+   "spread_ticks": 606.99951171875
+  }
+ ]
+}
