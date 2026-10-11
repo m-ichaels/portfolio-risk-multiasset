@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Full pipeline: (data ->) checks -> the day pipeline -> tests -> figures -> summary -> report
+# Full pipeline: (data ->) checks -> the day pipeline -> tests -> figures -> summary -> README
 # Usage: scripts/run_all.sh [--download] [--build-book] [--quick]
 set -euo pipefail
 cd "$(dirname "$0")/.."
@@ -14,6 +14,5 @@ python -u -m xrisk run --from $FROM --to $TO --faults alternate --seed 1 | tee r
 python -m pytest -q | tee results/tests.txt
 python scripts/plots.py
 python scripts/summarize.py
-python scripts/report.py
 python scripts/fill_readme.py
 echo done

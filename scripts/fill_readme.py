@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""README.md from scripts/README.template.md, results/run.json and the store.   python scripts/fill_readme.py"""
+"""README.md and docs/method.md from scripts/README.template.md, scripts/method.template.md, results/run.json and the store.   python scripts/fill_readme.py"""
 import json
 import os
 import re
@@ -70,8 +70,11 @@ rows = []
 for fund, g in rq.groupby("fund"):
     rows.append((f"{fund} ({'IG' if fund == 'LQD' else 'HY'})", len(g), f"{g['markup_pts'].mean():.3f}", f"{g['markup_pts'].median():.3f}", f"{g['markup_bp_yield'].mean():.1f}", f"{g['cover'].mean():.3f}", f"{g['trace_dev_pts'].mean():.3f}", int((g['trace_prints'] > 0).sum()), int((g['flags'] != '').sum())))
 rep["CREDIT_TABLE"] = table(["bucket", "trades", "mean markup (pts)", "median", "mean markup (bp yield)", "mean cover (pts)", "mean dev. vs TRACE VWAP", "with prints", "flagged"], rows) + f"\n\nFlags: {cr['flags']}. Winning dealers: {cr['winners']} (the dealers differ in skill by construction, and the best quote wins). Late TRACE reports: {cr['late_reports']}, all the injected fault."
-p = os.path.join(ROOT, "README.md"); s = open(os.path.join(ROOT, "scripts", "README.template.md"), encoding="utf-8").read()
-for k, v in rep.items():
-    s = s.replace(f"__{k}__", str(v))
-left = re.findall(r"__[A-Z_]+__", s)
-open(p, "w", encoding="utf-8", newline="\n").write(s); print("filled; left:", left)
+for tname, oname in (("README.template.md", "README.md"), ("method.template.md", os.path.join("docs", "method.md"))):
+    s = open(os.path.join(ROOT, "scripts", tname), encoding="utf-8").read()
+    for k, v in rep.items():
+        s = s.replace(f"__{k}__", str(v))
+    left = re.findall(r"__[A-Z_]+__", s)
+    os.makedirs(os.path.join(ROOT, os.path.dirname(oname)), exist_ok=True)
+    open(os.path.join(ROOT, oname), "w", encoding="utf-8", newline="\n").write(s)
+    print("filled", oname, "; left:", left)

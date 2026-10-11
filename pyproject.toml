@@ -7,7 +7,7 @@ name = "xrisk"
 version = "0.1.0"
 description = "Portfolio risk monitor and multi-asset operations layer: exposures, limits, intraday P&L attribution, margin, futures rolls, FX forwards and settlement netting, credit RFQ post-trade; fault-injected and scored"
 requires-python = ">=3.10"
-dependencies = ["numpy", "pandas", "pyarrow", "duckdb", "matplotlib", "fpdf2"]
+dependencies = ["numpy", "pandas", "pyarrow", "duckdb", "matplotlib"]
 
 [project.optional-dependencies]
 test = ["pytest"]

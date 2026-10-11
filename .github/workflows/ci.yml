@@ -8,7 +8,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install numpy pandas pyarrow duckdb matplotlib fpdf2 pytest
+      - run: pip install numpy pandas pyarrow duckdb matplotlib pytest
       - name: unit tests (marks, limits, SPAN, attribution identity, exposures and VaR, rolls, value dates, netting, RFQ post-trade, scoring) and one fault day on the committed data
         run: python -m pytest -q
       - name: the futures continuity and roll-calendar check and the FX value-date check on the committed data
